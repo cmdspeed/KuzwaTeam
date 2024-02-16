@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
+import { LogoContainer, LogoHighlighted, LogoStyled } from "./Logo.styled";
 
 export const Logo = () => {
   return (
-    <div>
-      <Link to="/">
-        <span>Kuźwa</span>Team
-      </Link>
-    </div>
+    <LogoContainer>
+      <LogoStyled to="/">
+        <LogoHighlighted>Kuźwa</LogoHighlighted>Team
+      </LogoStyled>
+    </LogoContainer>
   );
 };
