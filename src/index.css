@@ -131,3 +131,22 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --main-text-color: #212121;
+  --logo-color: #2196f3;
+  --contacts-color: #757575;
+  --filters-bg-color: #f5f4fa;
+  --footer-section: #2f303a;
+  --contacts-footer-color: rgba(255, 255, 255, 0.6);
+  --second-color: #ffffff;
+  --nav-border: 1px solid #ececec;
+  --border-color-portfolio: #eeeeee;
+  --border-partner-logo: #afb1b8;
+  --overlay-filter-img-hover: rgba(33, 150, 243, 0.9);
+  --font-second: "Raleway";
+}
