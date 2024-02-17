@@ -4,5 +4,6 @@ export const BurgerSvg = styled.svg`
   fill: black;
   &:hover {
     fill: var(--logo-color);
+    cursor: pointer;
   }
 `;
