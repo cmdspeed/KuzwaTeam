@@ -5,4 +5,6 @@ export const Wrapper = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  padding: 1rem;
 `;
