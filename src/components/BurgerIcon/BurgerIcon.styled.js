@@ -6,4 +6,9 @@ export const BurgerSvg = styled.svg`
     fill: var(--logo-color);
     cursor: pointer;
   }
+  @media (min-width: 768px) {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
 `;
