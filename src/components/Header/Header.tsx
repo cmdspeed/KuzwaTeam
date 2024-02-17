@@ -1,9 +1,13 @@
+import { BurgerIcon } from "../BurgerIcon/BurgerIcon";
 import { Logo } from "../Logo/Logo";
 
 export const Header = () => {
   return (
     <header>
-      <Logo />
+      <div>
+        <Logo />
+        <BurgerIcon />
+      </div>
     </header>
   );
 };
