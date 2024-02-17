@@ -11,6 +11,7 @@ export const NavStyled = styled.nav`
   display: none;
   visibility: hidden;
   opacity: 0;
+
   @media (min-width: 768px) {
     display: block;
     visibility: visible;
@@ -35,11 +36,16 @@ export const LinkStyled = styled(NavLink)`
       content: "";
       position: relative;
       display: block;
-      top: 1.2rem;
+      top: 1.8rem;
       height: 0.25rem;
       width: 100%;
       border-radius: 0.125rem;
       background-color: var(--logo-color);
+    }
+    @media (min-width: 1200px) {
+      &::after {
+        top: 1.3rem;
+      }
     }
   }
   &:hover {
