@@ -8,6 +8,8 @@ function App() {
     <Suspense fallback={<div>LOADING</div>}>
       <Routes>
         <Route path="/" element={<Main />} />
+        <Route path="/shop" element={<Main />} />
+        <Route path="/contacts" element={<Main />} />
       </Routes>
     </Suspense>
   );
