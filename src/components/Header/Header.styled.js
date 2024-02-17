@@ -6,11 +6,17 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
 
+  max-width: 1200px;
+  margin: 0 auto;
+
   padding: 1rem;
-  border-bottom: var(--nav-border);
 `;
 
 export const HeaderLeft = styled.div`
   display: flex;
   flex-wrap: wrap;
+`;
+
+export const BottomSeparator = styled.div`
+  border-bottom: var(--nav-border);
 `;
