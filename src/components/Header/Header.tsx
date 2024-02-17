@@ -6,7 +6,7 @@ export const Header = () => {
     <header>
       <div>
         <Logo />
-        <BurgerIcon />
+        <BurgerIcon width="24px" height="16px" />
       </div>
     </header>
   );

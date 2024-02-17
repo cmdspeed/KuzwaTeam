@@ -1,9 +1,15 @@
 import icon from "../../assets/icon/icon.svg";
+import { BurgerSvg } from "./BurgerIcon.styled";
 
-export const BurgerIcon = () => {
+interface Props {
+  width: string;
+  height: string;
+}
+
+export const BurgerIcon = ({ width, height }: Props) => {
   return (
-    <svg>
+    <BurgerSvg width={width} height={height}>
       <use href={`${icon}#burger`} />
-    </svg>
+    </BurgerSvg>
   );
 };
