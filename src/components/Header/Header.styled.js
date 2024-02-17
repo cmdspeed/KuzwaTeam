@@ -8,3 +8,8 @@ export const Wrapper = styled.div`
 
   padding: 1rem;
 `;
+
+export const HeaderLeft = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`;
