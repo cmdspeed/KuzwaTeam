@@ -1,14 +1,24 @@
-import { Link } from "react-router-dom";
-
+import icons from "../../assets/icon/icon.svg";
+import { Icon, LinkStyled, List, ListItem } from "./ContactInfo.styled";
 export const ContactInfo = () => {
   return (
-    <ul>
+    <List>
+      <ListItem>
+        <LinkStyled to="mailto:cmdspeed@gmail.com">
+          <Icon width="16px" height="12px">
+            <use href={`${icons}#message`} />
+          </Icon>
+          cmdspeed@gmail.com
+        </LinkStyled>
+      </ListItem>
       <li>
-        <Link to="mailto:cmdspeed@gmail.com">cmdspeed@gmail.com</Link>
+        <LinkStyled to="tel:+48518824787">
+          <Icon width="10px" height="16px">
+            <use href={`${icons}#phone`} />
+          </Icon>
+          +48 518 824 787
+        </LinkStyled>
       </li>
-      <li>
-        <Link to="tel:+48518824787">+48 518 824 787</Link>
-      </li>
-    </ul>
+    </List>
   );
 };

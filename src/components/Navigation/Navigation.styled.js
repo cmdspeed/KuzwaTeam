@@ -6,7 +6,7 @@ export const NavStyled = styled.nav`
   font-size: 0.875rem;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  margin: auto 6.3125rem auto 5.1875rem;
+  margin: auto 3rem auto 5.1875rem;
 
   display: none;
   visibility: hidden;
@@ -41,5 +41,8 @@ export const LinkStyled = styled(NavLink)`
       border-radius: 0.125rem;
       background-color: var(--logo-color);
     }
+  }
+  &:hover {
+    color: var(--logo-color);
   }
 `;
