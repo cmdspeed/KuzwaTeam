@@ -1,11 +1,11 @@
-import { LogoContainer, LogoHighlighted, LogoStyled } from "./Logo.styled";
+import { LogoHighlighted, LogoStyled } from "./Logo.styled";
 
 export const Logo = () => {
   return (
-    <LogoContainer>
+    <div>
       <LogoStyled to="/">
         <LogoHighlighted>Kuźwa</LogoHighlighted>Team
       </LogoStyled>
-    </LogoContainer>
+    </div>
   );
 };
