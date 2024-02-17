@@ -1,9 +1,10 @@
 import { NavLink } from "react-router-dom";
+import { List, NavStyled } from "./Navigation.styled";
 
 export const Navigation = () => {
   return (
-    <nav>
-      <ul>
+    <NavStyled>
+      <List>
         <li>
           <NavLink to="/about">About Us</NavLink>
         </li>
@@ -13,7 +14,7 @@ export const Navigation = () => {
         <li>
           <NavLink to="/contacts">Contacts</NavLink>
         </li>
-      </ul>
-    </nav>
+      </List>
+    </NavStyled>
   );
 };
