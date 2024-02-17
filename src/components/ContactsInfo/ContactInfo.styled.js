@@ -28,7 +28,7 @@ export const ListItem = styled.li`
 export const LinkStyled = styled(Link)`
   color: var(--contacts-color);
   font-weight: 500;
-  font-size: 0.875;
+  font-size: 0.875rem;
   line-height: 1.14;
   letter-spacing: 0.02em;
   align-items: center;
