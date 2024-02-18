@@ -20,6 +20,7 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
   margin-bottom: 0.625rem;
+
   @media (min-width: 1200px) {
     margin: 0;
   }
@@ -38,6 +39,9 @@ export const LinkStyled = styled(Link)`
 
   &:hover {
     color: var(--logo-color);
+    svg {
+      fill: var(--logo-color);
+    }
   }
 `;
 
