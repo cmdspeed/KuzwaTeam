@@ -41,3 +41,12 @@ export const BtnContainer = styled.div`
   height: 3.125rem;
   margin: 2.5rem auto;
 `;
+
+export const ModalClose = styled.button`
+  background-color: white;
+  border: none;
+`;
+
+export const ButtonWrapper = styled.div`
+  text-align: right;
+`;

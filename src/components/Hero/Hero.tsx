@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import { Btn } from "../Buttons/Button/Button";
-import { BtnContainer, HeroSection, HeroTitle } from "./Hero.styled";
+import {
+  BtnContainer,
+  ButtonWrapper,
+  HeroSection,
+  HeroTitle,
+  ModalClose,
+} from "./Hero.styled";
 import { Modal } from "../Modal/Modal";
 
 export const Hero = () => {
@@ -29,8 +35,9 @@ export const Hero = () => {
       </div>
       {isModalOpen && (
         <Modal onClose={closeModal}>
-          <button onClick={closeModal}>Close Modal</button>
-
+          <ButtonWrapper>
+            <ModalClose onClick={closeModal}>X</ModalClose>
+          </ButtonWrapper>
           <p>To jest zawartość modala.</p>
         </Modal>
       )}
