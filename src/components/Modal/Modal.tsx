@@ -1,5 +1,10 @@
 import { useEffect } from "react";
-import { ModalBackground, ModalContent } from "./Modal.styled";
+import {
+  ButtonWrapper,
+  ModalBackground,
+  ModalClose,
+  ModalContent,
+} from "./Modal.styled";
 
 interface ModalProps {
   children: React.ReactNode;
@@ -7,7 +12,12 @@ interface ModalProps {
 }
 
 export const Modal: React.FC<ModalProps> = ({ children, onClose }) => {
-  const handleClose = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+  const handleClose = () => {
+    onClose();
+  };
+  const handleBackgroundClick = (
+    event: React.MouseEvent<HTMLDivElement, MouseEvent>
+  ) => {
     if (event.target === event.currentTarget) {
       onClose();
     }
@@ -28,8 +38,13 @@ export const Modal: React.FC<ModalProps> = ({ children, onClose }) => {
   }, [onClose]);
 
   return (
-    <ModalBackground onClick={handleClose}>
-      <ModalContent>{children}</ModalContent>
+    <ModalBackground onClick={handleBackgroundClick}>
+      <ModalContent>
+        <ButtonWrapper>
+          <ModalClose onClick={handleClose}>X</ModalClose>
+        </ButtonWrapper>
+        {children}
+      </ModalContent>
     </ModalBackground>
   );
 };

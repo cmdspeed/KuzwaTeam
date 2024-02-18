@@ -18,3 +18,12 @@ export const ModalContent = styled.div`
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 `;
+
+export const ModalClose = styled.button`
+  background-color: white;
+  border: none;
+`;
+
+export const ButtonWrapper = styled.div`
+  text-align: right;
+`;
