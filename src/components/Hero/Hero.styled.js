@@ -34,6 +34,7 @@ export const HeroTitle = styled.h1`
   color: var(--second-color);
   max-width: 365px;
   margin: 2rem auto 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 `;
 
 export const BtnContainer = styled.div`
