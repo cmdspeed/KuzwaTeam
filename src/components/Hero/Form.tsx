@@ -1,3 +1,5 @@
+import icon from "../../assets/icon/icon.svg";
+
 export const FormHero = () => {
   return (
     <form name="order">
@@ -8,7 +10,7 @@ export const FormHero = () => {
 
         <input name="name" id="id-name" type="text" />
         <svg width="18" height="18">
-          <use href="images/icons.svg#name" />
+          <use href={`${icon}#name`} />
         </svg>
       </div>
 
@@ -16,7 +18,7 @@ export const FormHero = () => {
         <label htmlFor="id-tel">Phone</label>
         <input name="tel" type="tel" id="id-tel" />
         <svg width="18" height="18">
-          <use href="images/icons.svg#phone2" />
+          <use href={`${icon}#phone`} />
         </svg>
       </div>
 
@@ -24,7 +26,7 @@ export const FormHero = () => {
         <label htmlFor="id-email">Email</label>
         <input name="email" type="email" id="id-email" />
         <svg width="18" height="18">
-          <use href="images/icons.svg#email" />
+          <use href={`${icon}#email`} />
         </svg>
       </div>
 
@@ -43,9 +45,6 @@ export const FormHero = () => {
           id="id-label-policy"
           value="statute"
         />
-        <svg width="16" height="15">
-          <use href="images/icons.svg#checked" />
-        </svg>
         I declare that I accept <a href="#">Statute</a> and
         <a href="#">Privacy Policy</a>
       </label>
