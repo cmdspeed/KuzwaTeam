@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import icon from "../../assets/icon/icon.svg";
 
 export const FormHero = () => {
@@ -45,8 +46,8 @@ export const FormHero = () => {
           id="id-label-policy"
           value="statute"
         />
-        I declare that I accept <a href="#">Statute</a> and
-        <a href="#">Privacy Policy</a>
+        I declare that I accept <Link to="#">Statute</Link> and
+        <Link to="#"> Privacy Policy</Link>
       </label>
 
       <button type="submit">Send</button>
