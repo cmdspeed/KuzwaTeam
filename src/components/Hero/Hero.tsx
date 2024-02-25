@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Btn } from "../Buttons/Button/Button";
 import { BtnContainer, HeroSection, HeroTitle } from "./Hero.styled";
 import { Modal } from "../Modal/Modal";
+import { FormHero } from "./FormHero/FormHero";
 
 export const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -29,7 +30,7 @@ export const Hero = () => {
       </div>
       {isModalOpen && (
         <Modal onClose={closeModal}>
-          <p>To jest zawartość modala.</p>
+          <FormHero />
         </Modal>
       )}
     </HeroSection>

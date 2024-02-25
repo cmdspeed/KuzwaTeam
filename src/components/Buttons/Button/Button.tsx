@@ -5,6 +5,7 @@ interface ButtonProps {
   onClick?: () => void;
   txtColor?: string;
   bgColor?: string;
+  type?: "button" | "submit" | "reset";
 }
 
 export const Btn: React.FC<ButtonProps> = ({
@@ -12,13 +13,14 @@ export const Btn: React.FC<ButtonProps> = ({
   onClick,
   txtColor,
   bgColor,
+  type = "button",
 }) => {
   const buttonStyle: React.CSSProperties = {
     color: txtColor,
     backgroundColor: bgColor,
   };
   return (
-    <ButtonStyled onClick={onClick} style={buttonStyle}>
+    <ButtonStyled type={type} onClick={onClick} style={buttonStyle}>
       {children}
     </ButtonStyled>
   );
