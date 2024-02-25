@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Nickname = styled.h3`
+  margin-top: 1rem;
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.18;
