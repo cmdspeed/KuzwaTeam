@@ -33,7 +33,11 @@ export const TeamMember = ({
     <TeamPlayer>
       <StyledFigure>
         <StyledFigcapture>
-          <Avatar src={src} alt={nickname} />
+          <Avatar
+            src={src}
+            alt={nickname}
+            srcSet={`${src} 1x, ${src.replace(".png", "@2x.png")} 2x`}
+          />
           <Nickname>{nickname}</Nickname>
           <Describe>{role}</Describe>
           <SocialContainer>
