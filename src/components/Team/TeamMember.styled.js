@@ -54,3 +54,42 @@ export const Avatar = styled.img`
     width: 16.875rem;
   }
 `;
+
+export const SocialContainer = styled.div`
+  display: flex;
+  margin: 1rem auto 1.125rem;
+  width: 12.875rem;
+`;
+
+export const IconWrapper = styled.div`
+  padding: 0.75rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin-right: 0.625rem;
+  background-color: var(--social-icon__container);
+  &:hover {
+    background-color: var(--logo-color);
+    fill: var(--second-color);
+    cursor: pointer;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+  }
+  &:hover {
+    svg {
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 250ms;
+      fill: var(--second-color);
+    }
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+`;
+
+export const Icon = styled.svg`
+  margin-right: 0;
+  fill: var(--border-partner-logo);
+`;

@@ -1,8 +1,11 @@
-import React from "react";
+import icons from "../../assets/icon/icon.svg";
 import {
   Avatar,
   Describe,
+  Icon,
+  IconWrapper,
   Nickname,
+  SocialContainer,
   StyledFigcapture,
   StyledFigure,
   TeamPlayer,
@@ -33,17 +36,17 @@ export const TeamMember = ({
           <Avatar src={src} alt={nickname} />
           <Nickname>{nickname}</Nickname>
           <Describe>{role}</Describe>
-          <div>
+          <SocialContainer>
             {socialMedia.map(({ url, icon }) => (
-              <div key={url}>
+              <IconWrapper key={url}>
                 <a href={url} target="_blank" rel="noopener noreferrer">
-                  <svg width="20" height="20">
-                    <use href={`images/icons.svg#${icon}`} />
-                  </svg>
+                  <Icon width="20" height="20">
+                    <use href={`${icons}#${icon}`} />
+                  </Icon>
                 </a>
-              </div>
+              </IconWrapper>
             ))}
-          </div>
+          </SocialContainer>
         </StyledFigcapture>
       </StyledFigure>
     </TeamPlayer>
