@@ -17,6 +17,11 @@ export const ModalContent = styled.div`
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  margin: 0 1rem;
+  @media (min-width: 1200px) {
+    max-width: 33rem;
+  }
 `;
 
 export const ModalClose = styled.button`
