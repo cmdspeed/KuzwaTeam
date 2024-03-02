@@ -1,5 +1,9 @@
 import { Team } from "../Team/Team";
 
 export const Main = () => {
-  return <Team />;
+  return (
+    <main>
+      <Team />
+    </main>
+  );
 };
