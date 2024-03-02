@@ -1,16 +1,17 @@
 import { Logo } from "../Logo/Logo";
 
 import { Address } from "./Address/Address";
+import { StyledFooter } from "./Footer.styled";
 import { JoinUs } from "./JoinUs/JoinUs";
 import { Newsleter } from "./Newsletter/Newsleter";
 
 export const Footer = () => {
   return (
-    <footer>
+    <StyledFooter>
       <Logo />
       <Address />
       <JoinUs />
       <Newsleter />
-    </footer>
+    </StyledFooter>
   );
 };
