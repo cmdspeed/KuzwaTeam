@@ -7,9 +7,17 @@ export const StyledFooter = styled.footer`
   font-style: normal;
   display: flex;
   flex-wrap: wrap;
-  gap: 3.75rem;
+
   justify-content: center;
   margin: 0 auto;
   max-width: 1200px;
   text-align: center;
+
+  @media (min-width: 768px) {
+    gap: 7.5rem;
+  }
+
+  @media (min-width: 1200px) {
+    gap: 5rem;
+  }
 `;
