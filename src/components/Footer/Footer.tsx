@@ -8,8 +8,10 @@ import { Newsleter } from "./Newsletter/Newsleter";
 export const Footer = () => {
   return (
     <StyledFooter>
-      <Logo txtColor="var(--second-color)" />
-      <Address />
+      <div>
+        <Logo txtColor="var(--second-color)" />
+        <Address />
+      </div>
       <JoinUs />
       <Newsleter />
     </StyledFooter>
