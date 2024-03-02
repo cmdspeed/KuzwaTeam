@@ -1,4 +1,5 @@
 import { Btn } from "../../Buttons/Button/Button";
+import icons from "../../../assets/icon/icon.svg";
 
 export const Newsleter = () => {
   return (
@@ -10,6 +11,9 @@ export const Newsleter = () => {
         </div>
         <Btn txtColor="var(--second-color)" bgColor="var(--logo-color)">
           Sign up
+          <svg width="24px" height="24px">
+            <use href={`${icons}#send`} />
+          </svg>
         </Btn>
       </div>
     </div>
