@@ -6,7 +6,7 @@ export const Team = () => {
   return (
     <TeamSection>
       <div>
-        <SectionTitle>Our team</SectionTitle>
+        <SectionTitle>Kuźwa Team</SectionTitle>
         <TeamList>
           {teamData.map((member) => (
             <TeamMember key={member.nickname} {...member} />
