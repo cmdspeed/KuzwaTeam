@@ -1,36 +1,48 @@
-import { Link } from "react-router-dom";
 import { Logo } from "../Logo/Logo";
 import icons from "../../assets/icon/icon.svg";
+import { Address } from "./Adress/Adress";
 
 export const Footer = () => {
   return (
     <footer>
       <Logo />
-      <div>
-        <h3>Rydułtowy, Dangerowska 69</h3>
-        <Link to="mailto:info@example.com">info@example.com</Link>
-        <Link to="tel:+48111111111">+48 111 111 111</Link>
-      </div>
+      <Address />
       <div>
         <h2>Join Us</h2>
         <div>
           <div>
-            <a href="http://intagram.com">
+            <a
+              href="http://intagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <svg width="20px" height="20px">
                 <use href={`${icons}#instagram`} />
               </svg>
             </a>
-            <a href="http://twitter.com">
+            <a
+              href="http://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <svg width="20px" height="20px">
                 <use href={`${icons}#twitter`} />
               </svg>
             </a>
-            <a href="http://facebook.com">
+            <a
+              href="http://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <svg width="20px" height="20px">
                 <use href={`${icons}#facebook`} />
               </svg>
             </a>
-            <a href="http://linkedin.com">
+            <a
+              href="http://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <svg width="20px" height="20px">
                 <use href={`${icons}#linkedin`} />
               </svg>
