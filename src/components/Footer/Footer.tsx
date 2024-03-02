@@ -1,6 +1,6 @@
 import { Logo } from "../Logo/Logo";
 import icons from "../../assets/icon/icon.svg";
-import { Address } from "./Adress/Adress";
+import { Address } from "./Address/Address";
 
 export const Footer = () => {
   return (
