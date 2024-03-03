@@ -5,19 +5,19 @@ export const StyledFooter = styled.footer`
   color: var(--second-color);
   padding-top: 3.75rem;
   font-style: normal;
-  display: flex;
-  flex-wrap: wrap;
-
-  justify-content: center;
-  margin: 0 auto;
-
   text-align: center;
+`;
 
+export const Constainer = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  align-content: space-around;
   @media (min-width: 768px) {
-    gap: 7.5rem;
-  }
-
-  @media (min-width: 1200px) {
-    gap: 5rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
 `;

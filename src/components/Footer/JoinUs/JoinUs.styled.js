@@ -12,6 +12,7 @@ export const SocialTitle = styled.h3`
 export const SocialIcons = styled.div`
   display: flex;
   margin: 1.25rem auto 3.75rem;
+  justify-content: center;
 `;
 
 export const IconWrapper = styled.div`
@@ -36,6 +37,7 @@ export const Icon = styled.svg`
 
 export const SocialLink = styled.a`
   margin-right: 0.625rem;
+
   &:last-child {
     margin-right: 0;
   }
