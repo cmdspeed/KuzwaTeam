@@ -1,49 +1,40 @@
 import icons from "../../../assets/icon/icon.svg";
+import { Icon, IconWrapper, SocialIcons, SocialTitle } from "./JoinUs.styled";
 
 export const JoinUs = () => {
   return (
     <div>
-      <h2>Join Us</h2>
-      <div>
-        <div>
-          <a
-            href="http://intagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg width="20px" height="20px">
+      <SocialTitle>Join Us</SocialTitle>
+      <SocialIcons>
+        <a href="http://intagram.com" target="_blank" rel="noopener noreferrer">
+          <IconWrapper>
+            <Icon>
               <use href={`${icons}#instagram`} />
-            </svg>
-          </a>
-          <a
-            href="http://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg width="20px" height="20px">
+            </Icon>
+          </IconWrapper>
+        </a>
+        <a href="http://twitter.com" target="_blank" rel="noopener noreferrer">
+          <IconWrapper>
+            <Icon>
               <use href={`${icons}#twitter`} />
-            </svg>
-          </a>
-          <a
-            href="http://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg width="20px" height="20px">
+            </Icon>
+          </IconWrapper>
+        </a>
+        <a href="http://facebook.com" target="_blank" rel="noopener noreferrer">
+          <IconWrapper>
+            <Icon>
               <use href={`${icons}#facebook`} />
-            </svg>
-          </a>
-          <a
-            href="http://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg width="20px" height="20px">
+            </Icon>
+          </IconWrapper>
+        </a>
+        <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <IconWrapper>
+            <Icon>
               <use href={`${icons}#linkedin`} />
-            </svg>
-          </a>
-        </div>
-      </div>
+            </Icon>
+          </IconWrapper>
+        </a>
+      </SocialIcons>
     </div>
   );
 };

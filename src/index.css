@@ -153,5 +153,5 @@ a {
   --border-color-portfolio: #eeeeee;
   --border-partner-logo: #afb1b8;
   --overlay-filter-img-hover: rgba(33, 150, 243, 0.9);
-
+  --social-icon-container: rgba(255, 255, 255, 0.1);
 }
