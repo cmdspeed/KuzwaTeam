@@ -20,8 +20,7 @@ export const IconWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: fit-content;
-  margin-right: 0.625rem;
+
   background-color: var(--social-icon-container);
   &:hover {
     background-color: var(--logo-color);
@@ -33,4 +32,11 @@ export const Icon = styled.svg`
   fill: var(--second-color);
   width: 20px;
   height: 20px;
+`;
+
+export const SocialLink = styled.a`
+  margin-right: 0.625rem;
+  &:last-child {
+    margin-right: 0;
+  }
 `;
