@@ -10,6 +10,6 @@ export const LogoStyled = styled(Link)`
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   line-height: 1.16;
-  font-family: var(---font-second);
+  font-family: "Raleway";
   font-weight: 700;
 `;
