@@ -10,7 +10,7 @@ export const StyledFooter = styled.footer`
 
   justify-content: center;
   margin: 0 auto;
-  max-width: 1200px;
+
   text-align: center;
 
   @media (min-width: 768px) {
