@@ -18,6 +18,6 @@ export const Constainer = styled.div`
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    gap: 3rem;
   }
 `;
