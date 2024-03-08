@@ -9,10 +9,10 @@ export const teamData = [
     nickname: "Kamiliada",
     role: "Sniper",
     socialMedia: [
-      { url: "#", icon: "instagram" },
-      { url: "#", icon: "twitter" },
-      { url: "#", icon: "facebook" },
-      { url: "#", icon: "linkedin" },
+      { url: "#kamiliada1", icon: "instagram" },
+      { url: "#kamiliada2", icon: "twitter" },
+      { url: "#kamiliada3", icon: "facebook" },
+      { url: "#kamiliada4", icon: "linkedin" },
     ],
   },
   {
@@ -20,10 +20,10 @@ export const teamData = [
     nickname: "Danger",
     role: "Ninja defuser",
     socialMedia: [
-      { url: "#", icon: "instagram" },
-      { url: "#", icon: "twitter" },
-      { url: "#", icon: "facebook" },
-      { url: "#", icon: "linkedin" },
+      { url: "#danger1", icon: "instagram" },
+      { url: "#danger2", icon: "twitter" },
+      { url: "#danger3", icon: "facebook" },
+      { url: "#danger4", icon: "linkedin" },
     ],
   },
   {
@@ -31,10 +31,10 @@ export const teamData = [
     nickname: "Lums1000",
     role: "Support",
     socialMedia: [
-      { url: "#", icon: "instagram" },
-      { url: "#", icon: "twitter" },
-      { url: "#", icon: "facebook" },
-      { url: "#", icon: "linkedin" },
+      { url: "#lums1", icon: "instagram" },
+      { url: "#lums2", icon: "twitter" },
+      { url: "#lums3", icon: "facebook" },
+      { url: "#lums4", icon: "linkedin" },
     ],
   },
   {
@@ -42,10 +42,10 @@ export const teamData = [
     nickname: "Mruczek",
     role: "Negev player",
     socialMedia: [
-      { url: "#", icon: "instagram" },
-      { url: "#", icon: "twitter" },
-      { url: "#", icon: "facebook" },
-      { url: "#", icon: "linkedin" },
+      { url: "#mruczek1", icon: "instagram" },
+      { url: "#mruczek2", icon: "twitter" },
+      { url: "#mruczek3", icon: "facebook" },
+      { url: "#mruczek4", icon: "linkedin" },
     ],
   },
 ];
