@@ -29,7 +29,7 @@ export const LinkStyled = styled(NavLink)`
   &:active {
     color: var(--logo-color);
   }
-  &.${(props) => props.activeClassName} {
+  &.${(props) => props.activeclassname} {
     color: var(--logo-color);
 
     &::after {
