@@ -4,19 +4,19 @@ export const ContactInfo = () => {
   return (
     <List>
       <ListItem>
-        <LinkStyled to="mailto:cmdspeed@gmail.com">
+        <LinkStyled to="mailto:kuźwateam@lelenie.com">
           <Icon width="16px" height="12px">
             <use href={`${icons}#message`} />
           </Icon>
-          cmdspeed@gmail.com
+          kuźwateam@lelenie.com
         </LinkStyled>
       </ListItem>
       <li>
-        <LinkStyled to="tel:+48518824787">
+        <LinkStyled to="tel:+48696666999">
           <Icon width="10px" height="16px">
             <use href={`${icons}#phone`} />
           </Icon>
-          +48 518 824 787
+          +48 696 666 999
         </LinkStyled>
       </li>
     </List>
