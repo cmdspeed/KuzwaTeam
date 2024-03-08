@@ -9,9 +9,14 @@ import {
 interface ModalProps {
   children: React.ReactNode;
   onClose: () => void;
+  isfullscreen?: string;
 }
 
-export const Modal: React.FC<ModalProps> = ({ children, onClose }) => {
+export const Modal: React.FC<ModalProps> = ({
+  children,
+  onClose,
+  isfullscreen,
+}) => {
   const handleClose = () => {
     onClose();
   };
@@ -39,7 +44,7 @@ export const Modal: React.FC<ModalProps> = ({ children, onClose }) => {
 
   return (
     <ModalBackground onClick={handleBackgroundClick}>
-      <ModalContent>
+      <ModalContent isfullscreen={isfullscreen}>
         <ButtonWrapper>
           <ModalClose onClick={handleClose}>X</ModalClose>
         </ButtonWrapper>
