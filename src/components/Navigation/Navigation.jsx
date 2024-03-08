@@ -5,17 +5,17 @@ export const Navigation = () => {
     <NavStyled>
       <List>
         <li>
-          <LinkStyled activeClassName="active" to="/">
+          <LinkStyled to="/" activeclassname="active">
             About Us
           </LinkStyled>
         </li>
         <li>
-          <LinkStyled activeClassName="active" to="/shop">
+          <LinkStyled to="/shop" activeclassname="active">
             Shop
           </LinkStyled>
         </li>
         <li>
-          <LinkStyled activeClassName="active" to="/contacts">
+          <LinkStyled to="/contacts" activeclassname="active">
             Contacts
           </LinkStyled>
         </li>
