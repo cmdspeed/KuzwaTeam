@@ -29,7 +29,7 @@ export const Header = () => {
         </Wrapper>
         {isModalOpen && (
           <Modal onClose={closeModal} isfullscreen={true.toString()}>
-            <div>xD</div>
+            <Navigation isModalOpen={isModalOpen} />
           </Modal>
         )}
       </BottomSeparator>
