@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const List = styled.ul`
   display: none;
@@ -16,6 +16,16 @@ export const List = styled.ul`
   @media (min-width: 1200px) {
     display: flex;
   }
+  ${(props) =>
+    props.ismodalopen &&
+    css`
+      display: flex;
+      visibility: visible;
+      opacity: 1;
+
+      justify-content: center;
+      flex-wrap: wrap;
+    `}
 `;
 
 export const ListItem = styled.li`

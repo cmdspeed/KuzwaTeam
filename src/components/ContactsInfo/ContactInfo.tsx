@@ -1,8 +1,12 @@
 import icons from "../../assets/icon/icon.svg";
 import { Icon, LinkStyled, List, ListItem } from "./ContactInfo.styled";
-export const ContactInfo = () => {
+
+interface Props {
+  isModalOpen?: boolean;
+}
+export const ContactInfo = ({ isModalOpen }: Props) => {
   return (
-    <List>
+    <List ismodalopen={isModalOpen}>
       <ListItem>
         <LinkStyled to="mailto:kuźwateam@lelenie.com">
           <Icon width="16px" height="12px">
