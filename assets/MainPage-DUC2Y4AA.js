@@ -1,4 +1,4 @@
-import{L as C,j as e,r as m}from"./index-DloXIJt3.js";import{u as i,i as a,B as f,M as T,h as b,a as p}from"./icon-uuI5k06F.js";const M="/KuzwaTeam/assets/dangerBG@x1-BO1ksDDa.jpg",H="/KuzwaTeam/assets/dangerBG@x2-C5eG2U8M.jpg",S=i.section`
+import{L as C,j as e,r as m}from"./index-dOdSBEBh.js";import{u as i,i as a,B as f,M as T,h as b,a as p}from"./icon-CgXhofhq.js";const M="/KuzwaTeam/assets/dangerBG@x1-BO1ksDDa.jpg",H="/KuzwaTeam/assets/dangerBG@x2-C5eG2U8M.jpg",S=i.section`
   background: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -242,7 +242,7 @@ import{L as C,j as e,r as m}from"./index-DloXIJt3.js";import{u as i,i as a,B as 
   transform: rotateY(180deg);
   height: 461.34px;
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
 
   display: flex;
   flex-direction: column;
