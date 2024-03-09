@@ -6,6 +6,9 @@ export const StyledFooter = styled.footer`
   padding: 3.75rem 0 3.75rem;
   font-style: normal;
   text-align: center;
+  @media (min-width: 768px) {
+    padding: 3.75rem 0 0;
+  }
 `;
 
 export const Constainer = styled.div`
