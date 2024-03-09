@@ -4,7 +4,12 @@ import { ContactInfo } from "../ContactsInfo/ContactInfo";
 import { Logo } from "../Logo/Logo";
 import { Modal } from "../Modal/Modal";
 import { Navigation } from "../Navigation/Navigation";
-import { BottomSeparator, HeaderLeft, Wrapper } from "./Header.styled";
+import {
+  BottomSeparator,
+  HeaderLeft,
+  ModalContent,
+  Wrapper,
+} from "./Header.styled";
 
 export const Header = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -29,8 +34,10 @@ export const Header = () => {
         </Wrapper>
         {isModalOpen && (
           <Modal onClose={closeModal} isfullscreen={true.toString()}>
-            <Navigation isModalOpen={isModalOpen} />
-            <ContactInfo isModalOpen={isModalOpen} />
+            <ModalContent>
+              <Navigation isModalOpen={isModalOpen} />
+              <ContactInfo isModalOpen={isModalOpen} />
+            </ModalContent>
           </Modal>
         )}
       </BottomSeparator>

@@ -19,12 +19,15 @@ export const List = styled.ul`
   ${(props) =>
     props.ismodalopen &&
     css`
-      display: flex;
+      display: block;
       visibility: visible;
       opacity: 1;
 
-      justify-content: center;
-      flex-wrap: wrap;
+      position: absolute;
+      bottom: 5rem;
+
+      left: 55%;
+      transform: translateX(-50%);
     `}
 `;
 
