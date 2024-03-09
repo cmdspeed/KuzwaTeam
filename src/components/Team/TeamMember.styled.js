@@ -126,7 +126,7 @@ export const DescriptionCardPlayer = styled.div`
   transform: rotateY(180deg);
   height: 461.34px;
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
 
   display: flex;
   flex-direction: column;
