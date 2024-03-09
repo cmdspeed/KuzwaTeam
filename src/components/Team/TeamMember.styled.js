@@ -1,4 +1,22 @@
-import styled from "styled-components";
+import styled, { keyframes, css } from "styled-components";
+
+const rotateCard = keyframes`
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+`;
+
+const rotateBackCard = keyframes`
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+`;
 
 export const Nickname = styled.h3`
   margin-top: 1rem;
@@ -26,6 +44,15 @@ export const TeamPlayer = styled.li`
   @media (min-width: 1200px) {
     flex-basis: calc((100% - 3 * 40px) / 4);
   }
+
+  animation: ${({ isHovered }) =>
+    isHovered
+      ? css`
+          ${rotateCard} 1s forwards;
+        `
+      : css`
+          ${rotateBackCard} 1s forwards;
+        `};
 `;
 
 export const StyledFigure = styled.figure`
@@ -93,4 +120,26 @@ export const IconWrapper = styled.div`
 export const Icon = styled.svg`
   margin-right: 0;
   fill: var(--border-partner-logo);
+`;
+
+export const DescriptionCardPlayer = styled.div`
+  transform: rotateY(180deg);
+  height: 461.34px;
+  padding: 1rem;
+  font-size: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+  @media (min-width: 480px) {
+    height: 700.41px;
+  }
+  @media (min-width: 768px) {
+    height: 572.91px;
+  }
+  @media (min-width: 1200px) {
+    height: 461.34px;
+  }
 `;
