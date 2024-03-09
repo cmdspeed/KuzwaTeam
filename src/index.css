@@ -112,6 +112,30 @@ body {
 
 }
 
+a:focus,
+button:focus {
+  outline: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
+  -khtml-box-shadow: none;
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -khtml-tap-highlight-color: transparent;
+  text-decoration: underline #2196f3;
+
+}
+
+button:focus,
+input:focus,
+textarea:focus {
+
+  border: #6bbaf7;
+}
+
 ol,
 ul {
   list-style: none;
