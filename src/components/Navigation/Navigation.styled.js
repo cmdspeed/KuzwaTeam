@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { NavLink } from "react-router-dom";
 
 export const NavStyled = styled.nav`
@@ -17,12 +17,25 @@ export const NavStyled = styled.nav`
     visibility: visible;
     opacity: 1;
   }
+  ${(props) =>
+    props.ismodalopen &&
+    css`
+      display: block;
+      margin-top: 3rem;
+      visibility: visible;
+      opacity: 1;
+    `}
 `;
 
 export const List = styled.ul`
   display: flex;
   gap: 2.875rem;
   align-items: center;
+  ${(props) =>
+    props.ismodalopen &&
+    css`
+      flex-direction: column;
+    `}
 `;
 
 export const LinkStyled = styled(NavLink)`
@@ -51,4 +64,13 @@ export const LinkStyled = styled(NavLink)`
   &:hover {
     color: var(--logo-color);
   }
+`;
+
+export const ListItem = styled.li`
+  ${(props) =>
+    props.ismodalopen &&
+    css`
+      width: 100%;
+      text-align: center;
+    `}
 `;

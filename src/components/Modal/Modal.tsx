@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import {
   ButtonWrapper,
   ModalBackground,
@@ -9,24 +9,33 @@ import {
 interface ModalProps {
   children: React.ReactNode;
   onClose: () => void;
+  isfullscreen?: string;
 }
 
-export const Modal: React.FC<ModalProps> = ({ children, onClose }) => {
+export const Modal: React.FC<ModalProps> = ({
+  children,
+  onClose,
+  isfullscreen,
+}) => {
+  const [isClosing, setIsClosing] = useState(false);
   const handleClose = () => {
-    onClose();
+    setIsClosing(true);
+    setTimeout(() => {
+      onClose();
+    }, 300);
   };
   const handleBackgroundClick = (
     event: React.MouseEvent<HTMLDivElement, MouseEvent>
   ) => {
     if (event.target === event.currentTarget) {
-      onClose();
+      handleClose();
     }
   };
 
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
-        onClose();
+        handleClose();
       }
     };
 
@@ -39,7 +48,7 @@ export const Modal: React.FC<ModalProps> = ({ children, onClose }) => {
 
   return (
     <ModalBackground onClick={handleBackgroundClick}>
-      <ModalContent>
+      <ModalContent isfullscreen={isfullscreen} isClosing={isClosing}>
         <ButtonWrapper>
           <ModalClose onClick={handleClose}>X</ModalClose>
         </ButtonWrapper>

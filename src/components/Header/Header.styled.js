@@ -20,3 +20,8 @@ export const HeaderLeft = styled.div`
 export const BottomSeparator = styled.div`
   border-bottom: var(--nav-border);
 `;
+
+export const ModalContent = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
