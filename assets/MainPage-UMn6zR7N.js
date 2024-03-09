@@ -1,4 +1,4 @@
-import{L as C,j as e,r as m}from"./index-dOdSBEBh.js";import{u as i,i as a,B as f,M as T,h as b,a as p}from"./icon-CgXhofhq.js";const M="/KuzwaTeam/assets/dangerBG@x1-BO1ksDDa.jpg",H="/KuzwaTeam/assets/dangerBG@x2-C5eG2U8M.jpg",S=i.section`
+import{L as C,j as e,r as m}from"./index-uEc1fZsP.js";import{u as i,i as a,B as f,M as T,h as b,a as p}from"./icon-yBWn8RL4.js";const M="/KuzwaTeam/assets/dangerBG@x1-BO1ksDDa.jpg",H="/KuzwaTeam/assets/dangerBG@x2-C5eG2U8M.jpg",S=i.section`
   background: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),

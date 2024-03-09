@@ -1,4 +1,4 @@
-import{L as j,j as e,N as w,r as u,O as b}from"./index-dOdSBEBh.js";import{u as r,i as t,B as k,a,M as S}from"./icon-CgXhofhq.js";const L=r.span`
+import{L as j,j as e,N as w,r as u,O as b}from"./index-uEc1fZsP.js";import{u as r,i as t,B as k,a,M as S}from"./icon-yBWn8RL4.js";const L=r.span`
   color: var(--logo-color);
 `,$=r(j)`
   font-size: 1.5rem;
