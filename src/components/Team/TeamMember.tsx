@@ -56,7 +56,7 @@ export const TeamMember = ({
     <TeamPlayer
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      isHovered={isHovered}
+      ishovered={isHovered}
     >
       <StyledFigure>
         <StyledFigcapture>

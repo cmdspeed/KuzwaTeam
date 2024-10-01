@@ -45,8 +45,8 @@ export const TeamPlayer = styled.li`
     flex-basis: calc((100% - 3 * 40px) / 4);
   }
 
-  animation: ${({ isHovered }) =>
-    isHovered
+  animation: ${({ ishovered }) =>
+    ishovered
       ? css`
           ${rotateCard} 1s forwards;
         `
