@@ -33,6 +33,7 @@ export const Describe = styled.p`
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--contacts-color);
+  padding-bottom: 1rem;
 `;
 
 export const TeamPlayer = styled.li`
@@ -124,7 +125,7 @@ export const Icon = styled.svg`
 
 export const DescriptionCardPlayer = styled.div`
   transform: rotateY(180deg);
-  height: 461.34px;
+  height: 400.34px;
   padding: 1rem;
   font-size: 1rem;
 
@@ -134,12 +135,12 @@ export const DescriptionCardPlayer = styled.div`
   justify-content: center;
 
   @media (min-width: 480px) {
-    height: 700.41px;
+    height: 635.41px;
   }
   @media (min-width: 768px) {
-    height: 572.91px;
+    height: 502.91px;
   }
   @media (min-width: 1200px) {
-    height: 461.34px;
+    height: 399.34px;
   }
 `;

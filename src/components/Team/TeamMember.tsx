@@ -71,17 +71,6 @@ export const TeamMember = ({
               />
               <Nickname>{nickname}</Nickname>
               <Describe>{role}</Describe>
-              <SocialContainer>
-                {socialMedia.map(({ url, icon }) => (
-                  <IconWrapper key={url}>
-                    <a href={url} target="_blank" rel="noopener noreferrer">
-                      <Icon width="20" height="20">
-                        <use href={`${icons}#${icon}`} />
-                      </Icon>
-                    </a>
-                  </IconWrapper>
-                ))}
-              </SocialContainer>
             </>
           )}
         </StyledFigcapture>
