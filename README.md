@@ -1,1 +1,1 @@
-fun page Kuźwa Team
+fanpage Kuźwa Team
